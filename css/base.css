@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h3 {
+  color: blueviolet;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Get applied css style</title>
+  <link href="./css/base.css" rel="styleSheet" />
+  <link href="./css/layout.css" rel="styleSheet" />
+</head>
+<body>
+  <main>
+    <h3>Get applied css style</h3>
+  </main>
+  <script src="style.js"></script>
+  <script>
+    console.log(Style.getStyle(document.getElementsByTagName('body')[0]))
+    console.log(Style.getStyle(document.getElementsByTagName('main')[0]))
+    console.log(Style.getStyle(document.getElementsByTagName('h3')[0]))
+  </script>
+</body>
+</html>

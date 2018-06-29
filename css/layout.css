@@ -1,0 +1,8 @@
+body {
+  min-width: 1000px;
+  word-wrap: break-word;
+}
+
+@media ( max-width: 768px ) {
+  body { color: red; }
+}
