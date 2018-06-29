@@ -10,13 +10,20 @@
 </head>
 <body>
   <main>
-    <h3>Get applied css style</h3>
+    <h3>Get applied style in css file</h3>
+    <div id="body-style">body : <pre><code></code></pre></div>
+    <div id="main-style">main : <pre><code></code></pre></div>
+    <div id="h3-style">h3 : <pre><code></code></pre></div>
   </main>
   <script src="style.js"></script>
   <script>
-    console.log(Style.getStyle(document.getElementsByTagName('body')[0]))
-    console.log(Style.getStyle(document.getElementsByTagName('main')[0]))
-    console.log(Style.getStyle(document.getElementsByTagName('h3')[0]))
+    document.getElementById('body-style').firstElementChild.firstElementChild.innerHTML = JSON.stringify(Style.getStyle(document.getElementsByTagName('body')[0]), null, '\t')
+    document.getElementById('main-style').firstElementChild.firstElementChild.innerHTML = JSON.stringify(Style.getStyle(document.getElementsByTagName('main')[0]), null, '\t')
+    document.getElementById('h3-style').firstElementChild.firstElementChild.innerHTML = JSON.stringify(Style.getStyle(document.getElementsByTagName('h3')[0]), null, '\t')
+    // console.log(Style.getStyle(document.getElementsByTagName('body')[0]))
+    // console.log(Style.getStyle(document.getElementsByTagName('main')[0]))
+    // console.log(Style.getStyle(document.getElementsByTagName('h3')[0]))
+
   </script>
 </body>
 </html>
